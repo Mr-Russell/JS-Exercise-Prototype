@@ -107,10 +107,19 @@ Baby.prototype.play = function(){
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  
+  1. When inside a global scope, "this" points to the entire Window, known as Window Binding. Meaning
+      "this" is essentially not defined, and basically points to all of the Javascript language
+  
+  2. When inside an object, "this" points to your object. The object "this" is pointing to is most
+      most commonly the object preceeded by the dot (which commonly preceeds your function/method).
+      This is known as Implicit Binding.
+  
+  3. When inside a constructor function, "this" points to the new object(s) you are creating when
+      calling that function using the "new" keyword.
+  
+  4. When using a method like ".call" or ".apply", you will need to explicitly reference the object you
+      want that method to effect, and that will be the object "this" points to.
 */
 
 
